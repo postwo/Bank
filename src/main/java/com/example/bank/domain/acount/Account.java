@@ -29,7 +29,7 @@ public class Account {
     @Column(nullable = false,length = 4)
     private Long password; // 계좌 비번
     @Column(nullable = false)
-    private Long balance; // 잔액(기본값 1000원)
+    private Long balance; // 잔액(기본값 1000원) // 남은잔액
 
     //항상 orm에서 fk의 주인은 many entity 쪽이다
     @ManyToOne(fetch = FetchType.LAZY)
