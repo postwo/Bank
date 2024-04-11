@@ -19,8 +19,8 @@ spring:
     hibernate:
       ddl-auto: create
     properties:
-      '[hibernate.default_batch_fetch_size]':100
-      '[hibernate.format_sql]':true
+      '[hibernate.default_batch_fetch_size]': 100
+      '[hibernate.format_sql]': true
     show-sql: true
   output:
     ansi:
@@ -28,5 +28,5 @@ spring:
 
 logging:
   level:
-    '[com.example.bank]': DEBUG
-
+    '[shop.mtcoding.bank]': DEBUG
+    '[org.hibernate.type]': TRACE

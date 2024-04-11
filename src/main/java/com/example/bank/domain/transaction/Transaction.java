@@ -22,7 +22,10 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne(fetch=FetchType.LAZY)
     private Account withdrawAccount;
+
+    @ManyToOne(fetch = FetchType.LAZY)
     private Account depositAccount;
 
     private Long amount; //얼마나 입금했는지
